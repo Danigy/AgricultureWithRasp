@@ -1,0 +1,14 @@
+cd /Volumes/boot
+touch ssh
+touch wpa_supplicant.conf
+
+echo "ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=DE
+
+network={
+    ssid="devolo-000B3BD5A646"
+    psk="BPQR-KDZY-XSZC-LZZZ"
+    key_mgmt=WPA-PSK
+}" >> wpa_supplicant.conf
+
